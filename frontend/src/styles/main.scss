@@ -10,8 +10,10 @@
 @import './header.scss';
 @import './components/burger-menu.scss';
 @import './components/button.scss';
+@import './components/landing-page.scss';
 
 @import url('https://fonts.googleapis.com/css?family=Spectral');
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes');
 
 
 html, body {
@@ -58,8 +60,7 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Spectral';
-  font-style: italic;
+  font-family: 'GreatVibes';
 }
 
 .App {
