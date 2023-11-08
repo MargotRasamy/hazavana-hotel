@@ -1,0 +1,33 @@
+.button {
+    padding: 10px 30px;
+    border-radius: 4px;
+    
+    &-colored {
+        background-color: var(--colorPrimary200);
+        &:hover {
+            background-color: var(--colorPrimary) !important;
+        }
+    }
+
+    &-link {
+
+        
+    }
+
+    // Simple buttons
+    &-simple {
+        &.button-lg {
+            font-size: 24px;
+            margin: var(--spaceL) 0;
+        }
+        &.button-md {
+            font-size: 20px;
+            margin: var(--spaceM) 0;
+        }
+        &.button-sm {
+            font-size: 16px;
+            margin: var(--spaceS) 0;
+        }
+    }
+}
+

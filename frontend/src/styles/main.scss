@@ -6,13 +6,12 @@
 @import 'helpers/fonts.scss';
 @import 'helpers/reset.scss';
 
-// Import helpers files
-@import './Header.scss';
+// Import components style files
+@import './header.scss';
+@import './components/burger-menu.scss';
+@import './components/button.scss';
 
-@import url('https://fonts.googleapis.com/css?family=Aldrich');
-@import url('https://fonts.googleapis.com/css?family=Michroma');
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Arabic');
-@import url('https://fonts.googleapis.com/css?family=Assistant');
+@import url('https://fonts.googleapis.com/css?family=Spectral');
 
 
 html, body {
@@ -40,12 +39,13 @@ button {
 }
 
 html::-webkit-scrollbar {
-  width: 10px;
-  background-color: var(--colorPrimary100); 
+  width: 5px;
+  height: 5px;
+  background-color: var(--colorWhite); 
 }
 
 html::-webkit-scrollbar-thumb {
-  background: var(--colorPrimary); 
+  background: var(--colorMainBlack); 
 }
 
 * {
@@ -58,27 +58,32 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Michroma';
+  font-family: 'Spectral';
+  font-style: italic;
 }
 
 .App {
-  padding: 5px 0;
   min-height: 100vh;
-  background-color: rgb(250, 250, 250);
+  background-color: var(--colorWhite);
   display: flex;
   flex-direction: column;
   height: 100%;
   margin: 0;
 
-  @media screen and (max-width: 768px) {
-    padding: 0 20px;
-  }
-
-  @media screen and (max-width: 1240px) and (min-width: 769px) {
-    padding: 0 40px;
-  }
-
-  @media screen and (min-width: 1300px) {
-    padding: 0 100px;
+  .app-content {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+  
+    @media screen and (max-width: 1240px) and (min-width: 769px) {
+      padding: 0 40px;
+    }
+  
+    @media screen and (min-width: 1300px) {
+      padding: 0 100px;
+    }
   }
 }
