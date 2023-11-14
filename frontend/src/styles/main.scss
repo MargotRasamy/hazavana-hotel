@@ -11,6 +11,10 @@
 @import './components/burger-menu.scss';
 @import './components/button.scss';
 @import './components/landing-page.scss';
+@import './components/footer.scss';
+@import './components/presentation-section.scss';
+@import './components/frame-presentation.scss';
+
 
 @import url('https://fonts.googleapis.com/css?family=Spectral');
 @import url('https://fonts.googleapis.com/css?family=Great+Vibes');
@@ -77,20 +81,4 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   margin: 0;
 
-  .app-content {
-    display: flex;
-    flex-direction: column;
-    padding: 5px 0;
-    @media screen and (max-width: 768px) {
-      padding: 0 20px;
-    }
-  
-    @media screen and (max-width: 1240px) and (min-width: 769px) {
-      padding: 0 40px;
-    }
-  
-    @media screen and (min-width: 1300px) {
-      padding: 0 100px;
-    }
-  }
 }

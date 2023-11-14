@@ -1,0 +1,56 @@
+@import "../helpers/medias.scss";
+
+.presentation-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .caption-content {
+      flex: 0.6;
+    }
+    .media-content {
+      flex: 0.4;
+    }
+
+    @include small {
+      flex-direction: column;
+      align-items: flex-start;
+      .media-content {
+        padding: 2rem;
+        margin: 2rem auto auto auto;
+      }
+    }  
+    @include regular {
+      .caption-content {
+        flex: 0.6;
+      }
+      .media-content {
+        margin-left: 2rem;
+      }
+    }
+    @include large {
+      .caption-content {
+        flex: 0.3;
+      }
+      .media-content {
+        margin-left: 10rem;
+      }
+    }
+}
+
+.page-section {
+    margin: 2rem 0; 
+    padding: 1rem;
+
+    @include small {
+        padding: 0.4rem;
+    }
+    
+  
+    @include regular {
+      padding: 0.4rem 1.5rem;
+    }
+  
+    @include large {
+      padding: 1.75rem;
+    }
+}

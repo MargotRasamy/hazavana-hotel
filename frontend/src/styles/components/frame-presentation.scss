@@ -1,0 +1,32 @@
+@import "../helpers/medias.scss";
+.frame-presentation {
+    position: relative;
+    overflow: hidden;
+    .presentation-media-1, .presentation-media-2 {
+      position: relative;
+    }
+    .presentation-media-1 {
+      float: left;
+      margin-top: 0px;
+      width: 20vw;
+      z-index: 1;
+      @include mobile {
+        width: 70vw !important; // TO BE CLEANED
+      }
+      @include small {
+        width: 40vw;
+      }
+    }
+    .presentation-media-2 {
+      float: right;
+      margin-bottom: 0px;
+      margin-right: 0;
+      width: 15vw;
+      @include mobile {
+        width: 50vw !important; // TO BE CLEANED
+      }
+      @include small {
+        width: 30vw;
+      }
+    }
+  }
