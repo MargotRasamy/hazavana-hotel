@@ -48,9 +48,11 @@
   
     @include regular {
       padding: 0.4rem 1.5rem;
+      margin: 4rem 8rem;
     }
   
     @include large {
       padding: 1.75rem;
+      margin: 6rem 10rem;
     }
 }
