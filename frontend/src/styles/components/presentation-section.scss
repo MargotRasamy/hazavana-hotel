@@ -17,23 +17,29 @@
       .media-content {
         padding: 2rem;
         margin: 2rem auto auto auto;
+        order: 2;
+      }
+      .caption-content {
+        order: 1;
       }
     }  
     @include regular {
+      gap: 2rem;
       .caption-content {
         flex: 0.6;
       }
       .media-content {
-        margin-left: 2rem;
+     
       }
     }
     @include large {
+      gap: 10rem;
       .caption-content {
         flex: 0.3;
       }
       .media-content {
-        margin-left: 10rem;
       }
+
     }
 }
 
