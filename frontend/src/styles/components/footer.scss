@@ -1,13 +1,30 @@
-.footer {
+.minimal-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     padding: 1rem;
-    color: rgb(20, 20, 20);
-    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+    background-color: inherit;
+    top: auto;
     p {
         margin: 0;
         font-size: 9.5px;
+    }
+}
+
+.footer {
+    color: white;
+    background-color: black;
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+
+        .heading {
+            display: flex;
+            .info {
+            }
+        }
     }
 }

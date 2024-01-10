@@ -26,3 +26,39 @@ h2 {
         font-size: 24px;
     }
 }
+
+h3 {
+    @include regular {
+        font-size: 32px;
+    }
+    @include small {
+        font-size: 24px;
+    }
+    @include mobile {
+        font-size: 21px;
+    }
+}
+
+h4 {
+    @include regular {
+        font-size: 26px;
+    }
+    @include small {
+        font-size: 21px;
+    }
+    @include mobile {
+        font-size: 18px;
+    }
+}
+
+h5 {
+    @include regular {
+        font-size: 21px;
+    }
+    @include small {
+        font-size: 18px;
+    }
+    @include mobile {
+        font-size: 16px;
+    }
+}

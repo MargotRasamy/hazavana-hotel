@@ -10,8 +10,9 @@
     }
 
     &-link {
-
-        
+        &--underlined {
+            text-decoration: underline;
+        }
     }
 
     // Simple buttons

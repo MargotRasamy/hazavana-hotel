@@ -5,6 +5,7 @@
 @import 'helpers/spaces.scss';
 @import 'helpers/fonts.scss';
 @import 'helpers/reset.scss';
+@import 'helpers/images.scss';
 
 // Import components style files
 @import './header.scss';
@@ -14,6 +15,7 @@
 @import './components/footer.scss';
 @import './components/presentation-section.scss';
 @import './components/frame-presentation.scss';
+@import './components/rooms-preview-section.scss';
 
 
 @import url('https://fonts.googleapis.com/css?family=Spectral');
